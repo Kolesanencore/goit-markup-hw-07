@@ -6,45 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <title>Портфоліо</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="header__content container">
         <a class="logo logo-footer" href="./index.html"
           ><span class="span">Web</span>Studio</a
         >
         <nav>
-          <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="link">Студія</a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
             </li>
-            <li class="item"><a href="#" class="link">Контакти</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contacts-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
+        <ul class="contacts-nav">
+          <li class="contacts-nav__item">
+            <a href="mailto:info@devstudio.com" class="contacts-nav__link">
               <svg class="icon-mail" width="16" height="12">
                 <use href="./img/svg/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
+          <li class="contacts-nav__item">
+            <a href="tel:+380961111111" class="contacts-nav__link">
               <svg class="icon-phone" width="10" height="16">
                 <use href="./img/svg/icons.svg#icon-phone"></use>
               </svg>
@@ -57,34 +55,33 @@
     <main>
       <section class="portfolio section">
         <h1 class="hidden-title" style="visibility: hidden">Портфоліо</h1>
-        <div class="portfolio-container container">
-          <ul class="portfolio-menu">
+        <div class="portfolio__content container">
+          <ul class="portfolio-nav bounce-in-top">
             <li class="item">
-              <button class="filter-btn active" type="button">Усі</button>
+              <button class="portfolio-nav__filter-btn portfolio-nav__filter-btn--active" type="button">Усі</button>
             </li>
             <li class="item">
-              <button class="filter-btn" type="button">Веб-сайти</button>
+              <button class="portfolio-nav__filter-btn" type="button">Веб-сайти</button>
             </li>
             <li class="item">
-              <button class="filter-btn" type="button">Додатки</button>
+              <button class="portfolio-nav__filter-btn" type="button">Додатки</button>
             </li>
             <li class="item">
-              <button class="filter-btn" type="button">Дизайн</button>
+              <button class="portfolio-nav__filter-btn" type="button">Дизайн</button>
             </li>
             <li class="item">
-              <button class="filter-btn" type="button">Маркетинг</button>
+              <button class="portfolio-nav__filter-btn" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="main-box">
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/11.jpg"
                     alt="macbook pro display"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -92,21 +89,20 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Технокряк</h3>
-                  <p class="filter-descr">Веб-сайт</p>
+                  <h3 class="box-text__work-title">Технокряк</h3>
+                  <p class="box-text__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
 
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/12.jpg"
                     alt="stephen curry makes block on vince carter"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -114,21 +110,20 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
-                  <p class="filter-descr">Дизайн</p>
+                  <h3 class="box-text__work-title">Постер New Orlean vs Golden Star</h3>
+                  <p class="box-text__type">Дизайн</p>
                 </div>
               </a>
             </li>
 
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/13.jpg"
                     alt="the seafood restaurant"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -136,21 +131,20 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Ресторан Seafood</h3>
-                  <p class="filter-descr">Додаток</p>
+                  <h3 class="box-text__work-title">Ресторан Seafood</h3>
+                  <p class="box-text__type">Додаток</p>
                 </div>
               </a>
             </li>
 
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/14.jpg"
                     alt="beats pro solo headphones"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -158,20 +152,19 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Проєкт Prime</h3>
-                  <p class="filter-descr">Маркетинг</p>
+                  <h3 class="box-text__work-title">Проєкт Prime</h3>
+                  <p class="box-text__type">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/15.jpg"
                     alt="two boxes"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -179,20 +172,19 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Проєкт Boxes</h3>
-                  <p class="filter-descr">Додаток</p>
+                  <h3 class="box-text__work-title">Проєкт Boxes</h3>
+                  <p class="box-text__type">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/16.jpg"
                     alt="mac with map screen"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -200,20 +192,19 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Inspiration has no Borders</h3>
-                  <p class="filter-descr">Веб-сайт</p>
+                  <h3 class="box-text__work-title">Inspiration has no Borders</h3>
+                  <p class="box-text__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/17.jpg"
                     alt="opened magazine"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -221,20 +212,19 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Видання Limited Edition</h3>
-                  <p class="filter-descr">Дизайн</p>
+                  <h3 class="box-text__work-title">Видання Limited Edition</h3>
+                  <p class="box-text__type">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/18.jpg"
                     alt="label tag"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -242,20 +232,19 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Проєкт LAB</h3>
-                  <p class="filter-descr">Маркетинг</p>
+                  <h3 class="box-text__work-title">Проєкт LAB</h3>
+                  <p class="box-text__type">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="item">
-              <a class="card-link" href="">
-                <div class="box-descr">
+              <a class="main-box__link" href="">
+                <div class="box-wrapper">
                   <img
                     src="./img/19.jpg"
                     alt="prints on macbook"
                     width="370"
-                    height="294"
-                  />
+                    height="294" />
                   <p class="text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -263,8 +252,8 @@
                   </p>
                 </div>
                 <div class="box-text">
-                  <h3 class="work-title">Growing Business</h3>
-                  <p class="filter-descr">Додаток</p>
+                  <h3 class="box-text__work-title">Growing Business</h3>
+                  <p class="box-text__type">Додаток</p>
                 </div>
               </a>
             </li>
@@ -272,7 +261,7 @@
         </div>
       </section>
       <footer class="footer">
-        <div class="footer-container container">
+        <div class="footer__content container">
           <div class="footer-content">
             <a class="footer-logo" href="./index.html"
               ><span class="span">Web</span>Studio</a
@@ -289,38 +278,59 @@
               </li>
             </ul>
           </div>
-          <div class="footer-social-network">
-            <h3 class="network-title">приєднуйтесь</h3>
-            <ul class="network-list">
-              <li class="social-item">
-                <a href="" class="social-link-white">
-                  <svg class="iсon-footer" width="20px" height="20px">
+          <div class="footer__social_network">
+            <h3 class="network__title">приєднуйтесь</h3>
+            <ul class="network__list">
+              <li class="social__item">
+                <a href="" class="social__link_white">
+                  <svg class="footer_icons" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="" class="social-link-white">
-                  <svg class="iсon-footer" width="20px" height="20px">
+              <li class="social__item">
+                <a href="" class="social__link_white">
+                  <svg class="footer_icons" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="" class="social-link-white">
-                  <svg class="iсon-footer" width="20px" height="20px">
+              <li class="social__item">
+                <a href="" class="social__link_white">
+                  <svg class="footer_icons" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social-item">
-                <a href="" class="social-link-white">
-                  <svg class="iсon-footer" width="20px" height="20px">
+              <li class="social__item">
+                <a href="" class="social__link_white">
+                  <svg class="footer_icons" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="footer__subscribe_form">
+            <form class="subscribe__form">
+              <h4 class="subscribe__modal__title">Підпишіться на розсилку</h4>
+
+              <div class="subscribe__form-wrapper">
+                <label class="subscribe__label">
+                  <input
+                    class="subscribe__input"
+                    type="email"
+                    placeholder="E-mail"
+                    name="email" />
+                </label>
+                <button class="subscribe__button heartbeat" type="submit">
+                  Підписатися
+                  <svg class="icon-send" width="24" height="24">
+                    <use href="./img/svg/icons.svg#icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </footer>
