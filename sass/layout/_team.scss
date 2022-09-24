@@ -1,0 +1,86 @@
+.team {
+    background-color: $border-colour;
+  }
+  
+  .team__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.44;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .team__list {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .team__list > .team__card + .team__card {
+    margin-left: 30px;
+  }
+  
+  .card__teammate {
+    margin-bottom: 30px;
+  }
+  
+  .card__name {
+    margin-bottom: 10px;
+    color: $title-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+  }
+  /* SVG Team-Cards */
+  
+  .social__list--grey {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+  }
+  
+  .social__link--grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $primary-text-color;
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .card__job-title {
+    margin-bottom: 16px;
+  }
+  
+  .team__card {
+    background-color: $primary-white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  .client__icon,
+  .icon-phone,
+  .icon-mail,
+  .features-icon,
+  .team__icon,
+  .footer-icon {
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .social__link--grey:hover,
+  .social__link--grey:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+    transition: background-color 250ms;
+    transition: fill 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both;
+  }

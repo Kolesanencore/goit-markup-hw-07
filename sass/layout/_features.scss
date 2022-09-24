@@ -1,0 +1,29 @@
+.features__list > .features__item {
+    max-width: 270px;
+  }
+  
+  .features__wrapper {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  
+  .features__title {
+    color: $title-text-color;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  
+  .features__list {
+    display: flex;
+  }
+  
+  .features__list .features__item + .features__item {
+    margin-left: 30px;
+  }
