@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
+
+      <link rel="stylesheet" href="./css/main.min.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+
     <title>Портфоліо</title>
   </head>
   <body>
     <header class="header">
       <div class="header__content container">
-        <a class="logo logo-footer" href="./index.html"
-          ><span class="span">Web</span>Studio</a
-        >
+        <a class="logo logo--black" href="./index.html">
+          <span class="logo__web">Web</span
+          ><span class="logo__studio">Studio</span>
+        </a>
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link">Студія</a>
+              <a
+                href="./index.html"
+                class="site-nav__link "
+                >Студія</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфоліо</a>
             </li>
-            <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts-nav">
@@ -56,27 +66,27 @@
       <section class="portfolio section">
         <h1 class="hidden-title" style="visibility: hidden">Портфоліо</h1>
         <div class="portfolio__content container">
-          <ul class="portfolio-nav bounce-in-top">
-            <li class="item">
-              <button class="portfolio-nav__filter-btn portfolio-nav__filter-btn--active" type="button">Усі</button>
+          <ul class="portfolio__filter-list bounce-in-top">
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Усі</button>
             </li>
-            <li class="item">
-              <button class="portfolio-nav__filter-btn" type="button">Веб-сайти</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Веб-сайти</button>
             </li>
-            <li class="item">
-              <button class="portfolio-nav__filter-btn" type="button">Додатки</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Додатки</button>
             </li>
-            <li class="item">
-              <button class="portfolio-nav__filter-btn" type="button">Дизайн</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Дизайн</button>
             </li>
-            <li class="item">
-              <button class="portfolio-nav__filter-btn" type="button">Маркетинг</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="main-box">
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+             <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/11.jpg"
                     alt="macbook pro display"
@@ -88,16 +98,15 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Технокряк</h3>
-                  <p class="box-text__type">Веб-сайт</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Технокряк</h3>
+                  <p class="card-description__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
-
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/12.jpg"
                     alt="stephen curry makes block on vince carter"
@@ -109,16 +118,16 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Постер New Orlean vs Golden Star</h3>
-                  <p class="box-text__type">Дизайн</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Постер New Orlean vs Golden Star</h3>
+                  <p class="card-description__type">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/13.jpg"
                     alt="the seafood restaurant"
@@ -130,16 +139,16 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Ресторан Seafood</h3>
-                  <p class="box-text__type">Додаток</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Ресторан Seafood</h3>
+                  <p class="card-description__type">Додаток</p>
                 </div>
               </a>
             </li>
 
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/14.jpg"
                     alt="beats pro solo headphones"
@@ -151,15 +160,15 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Проєкт Prime</h3>
-                  <p class="box-text__type">Маркетинг</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Проєкт Prime</h3>
+                  <p class="card-description__type">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/15.jpg"
                     alt="two boxes"
@@ -171,15 +180,15 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Проєкт Boxes</h3>
-                  <p class="box-text__type">Додаток</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Проєкт Boxes</h3>
+                  <p class="card-description__type">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/16.jpg"
                     alt="mac with map screen"
@@ -191,15 +200,15 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Inspiration has no Borders</h3>
-                  <p class="box-text__type">Веб-сайт</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Inspiration has no Borders</h3>
+                  <p class="card-description__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/17.jpg"
                     alt="opened magazine"
@@ -211,15 +220,15 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Видання Limited Edition</h3>
-                  <p class="box-text__type">Дизайн</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Видання Limited Edition</h3>
+                  <p class="card-description__type">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/18.jpg"
                     alt="label tag"
@@ -231,15 +240,15 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Проєкт LAB</h3>
-                  <p class="box-text__type">Маркетинг</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Проєкт LAB</h3>
+                  <p class="card-description__type">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a class="main-box__link" href="">
-                <div class="box-wrapper">
+            <li class="portfolio__item">
+              <a class="portfolio__link" href="">
+                <div class="portfolio__card-wrapper">
                   <img
                     src="./img/19.jpg"
                     alt="prints on macbook"
@@ -251,9 +260,9 @@
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="box-text">
-                  <h3 class="box-text__work-title">Growing Business</h3>
-                  <p class="box-text__type">Додаток</p>
+                <div class="portfolio__card-description">
+                  <h3 class="card-description__title">Growing Business</h3>
+                  <p class="card-description__type">Додаток</p>
                 </div>
               </a>
             </li>
@@ -262,60 +271,54 @@
       </section>
       <footer class="footer">
         <div class="footer__content container">
-          <div class="footer-content">
-            <a class="footer-logo" href="./index.html"
-              ><span class="span">Web</span>Studio</a
-            >
-            <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
-            <ul class="footer-contacts">
-              <li class="email">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="tel">
-                <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-              </li>
-            </ul>
+          <div class="footer__contacts">
+            <a class="logo logo--white" href="./index.html">
+              <span class="logo__web">Web</span
+              ><span class="logo__studio--white">Studio</span>
+            </a>
+            <address class="footer__address">г. Киев, пр-т Леси Украинки, 26 
+              <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
+              <a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11</a>
+            </address>
           </div>
-          <div class="footer__social_network">
-            <h3 class="network__title">приєднуйтесь</h3>
-            <ul class="network__list">
-              <li class="social__item">
-                <a href="" class="social__link_white">
-                  <svg class="footer_icons" width="20px" height="20px">
+          <div class="footer__social-network">
+            <h3 class="social-network__title">приєднуйтесь</h3>
+            <ul class="social-network__list--white">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link--white">
+                  <svg class="footer__icon" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link_white">
-                  <svg class="footer_icons" width="20px" height="20px">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link--white">
+                  <svg class="footer__icon" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link_white">
-                  <svg class="footer_icons" width="20px" height="20px">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link--white">
+                  <svg class="footer__icon" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a href="" class="social__link_white">
-                  <svg class="footer_icons" width="20px" height="20px">
+              <li class="social-network__item">
+                <a href="#" class="social-network__link--white">
+                  <svg class="footer__icon" width="20px" height="20px">
                     <use href="./img/svg/icons.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer__subscribe_form">
+          <div class="footer__subscribe">
             <form class="subscribe__form">
-              <h4 class="subscribe__modal__title">Підпишіться на розсилку</h4>
+              <h4 class="subscribe__title">Підпишіться на розсилку</h4>
 
-              <div class="subscribe__form-wrapper">
+              <div class="subscribe__wrapper">
                 <label class="subscribe__label">
                   <input
                     class="subscribe__input"
