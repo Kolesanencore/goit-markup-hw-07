@@ -1,11 +1,6 @@
-/* ========= Clients Section ======= */
+.client {
 
-.clients__list {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .clients__title {
+  &__title {
     color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
@@ -13,12 +8,17 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  
-  .client__item {
+
+  &__list {
     display: flex;
-  }
+    justify-content: space-between;
   
-  .client__link {
+    &__item {
+      display: flex;
+    }
+  }
+
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,26 +28,28 @@
     border: 1px solid #afb1b8;
     box-sizing: border-box;
     border-radius: 4px;
-  }
   
-  .client__link:hover,
-  .client__link:focus {
-    border-color: $accent-color;
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both;
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      transition: fill 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both;
+    }
+  
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: $accent-color;
+      transition: fill 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
+}
 
-  .rotate-in-ver{-webkit-animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both}
+.rotate-in-ver{-webkit-animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both;animation:rotate-in-ver 3s cubic-bezier(.25,.46,.45,.94) both}
 
 
 @-webkit-keyframes rotate-in-ver{0%{-webkit-transform:rotateY(-360deg);transform:rotateY(-360deg);opacity:0}100%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);opacity:1}}@keyframes rotate-in-ver{0%{-webkit-transform:rotateY(-360deg);transform:rotateY(-360deg);opacity:0}100%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg);opacity:1}}
 
 
-  
-  .client__link:hover .client__icon,
-  .client__link:focus .client__icon {
-    fill: $accent-color;
-    transition: fill 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
+

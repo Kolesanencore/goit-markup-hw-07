@@ -27,7 +27,7 @@
             <li class="site-nav__item">
               <a
                 href="./index.html"
-                class="site-nav__link site-nav__link--current"
+                class="site-nav__link site-nav__link--current site-nav__link--active"
                 >Студія</a
               >
             </li>
@@ -47,6 +47,7 @@
               </svg>
               info@devstudio.com
             </a>
+            
           </li>
           <li class="contacts-nav__item">
             <a href="tel:+380961111111" class="contacts-nav__link">
@@ -69,7 +70,7 @@
         </div>
       </section>
       <section class="features section">
-        <div class="features__content container">
+        <div class="container">
           <h2 class="hidden-title" style="visibility: hidden">Переваги</h2>
           <ul class="features__list">
             <li class="features__item">
@@ -160,16 +161,15 @@
         <div class="team__content container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-
             <li class="team__card">
               <img
                 src="./img/img.jpg"
                 alt="product Designer"
                 width="270"
                 height="260"
-                class="card__teammate" />
-              <h3 class="card__name">Ігор Дем'яненко</h3>
-              <p class="card__job-title">Product Designer</p>
+                class="team__teammate" />
+              <h3 class="team__name">Ігор Дем'яненко</h3>
+              <p class="team__job-title">Product Designer</p>
               <ul class="social__list--grey">
                 <li class="social__item">
                   <a href="" class="social__link--grey">
@@ -207,9 +207,9 @@
                 alt="frontend Developer"
                 width="270"
                 height="260"
-                class="card__teammate" />
-              <h3 class="card__name">Ольга Рєпіна</h3>
-              <p class="card__job-title">Frontend Developer</p>
+                class="team__teammate" />
+              <h3 class="team__name">Ольга Рєпіна</h3>
+              <p class="team__job-title">Frontend Developer</p>
               <ul class="social__list--grey">
                 <li class="social__item">
                   <a href="" class="social__link--grey">
@@ -247,9 +247,9 @@
                 alt="marketing Designer"
                 width="270"
                 height="260"
-                class="card__teammate" />
-              <h3 class="card__name">Микола Тарасов</h3>
-              <p class="card__job-title">Marketing UI Designer</p>
+                class="team__teammate" />
+              <h3 class="team__name">Микола Тарасов</h3>
+              <p class="team__job-title">Marketing UI Designer</p>
               <ul class="social__list--grey">
                 <li class="social__item">
                   <a href="" class="social__link--grey">
@@ -287,9 +287,9 @@
                 alt="ui Designer"
                 width="270"
                 height="260"
-                class="card__teammate" />
-              <h3 class="card__name">Михайло Єрмаков</h3>
-              <p class="card__job-title">UI Designer</p>
+                class="team__teammate" />
+              <h3 class="team__name">Михайло Єрмаков</h3>
+              <p class="team__job-title">UI Designer</p>
               <ul class="social__list--grey">
                 <li class="social__item">
                   <a href="" class="social__link--grey">
@@ -324,10 +324,10 @@
           </ul>
         </div>
       </section>
-      <section class="clients section">
-        <div class="clients__content container">
-          <h2 class="clients__title">Постійні клієнти</h2>
-          <ul class="clients__list">
+      <section class="client section">
+        <div class="container">
+          <h2 class="client__title">Постійні клієнти</h2>
+          <ul class="client__list">
             <li class="client__item">
               <a href="" class="client__link">
                 <svg class="client__icon" width="41px" height="46.7px">
@@ -375,17 +375,17 @@
       </section>
       <footer class="footer">
         <div class="footer__content container">
-          <div class="footer__contacts">
+          <div class="contacts">
             <a class="logo logo--white" href="./index.html">
               <span class="logo__web">Web</span
               ><span class="logo__studio--white">Studio</span>
             </a>
-            <address class="footer__address">г. Киев, пр-т Леси Украинки, 26 
-              <a class="footer__mail" href="mailto:info@example.com">info@example.com</a>
-              <a class="footer__tel" href="tel:+380991111111">+38 099 111 11 11</a>
+            <address class="contacts__address">г. Киев, пр-т Леси Украинки, 26 
+              <a class="address__mail" href="mailto:info@example.com">info@example.com</a>
+              <a class="address__tel" href="tel:+380991111111">+38 099 111 11 11</a>
             </address>
           </div>
-          <div class="footer__social-network">
+          <div class="social-network">
             <h3 class="social-network__title">приєднуйтесь</h3>
             <ul class="social-network__list--white">
               <li class="social-network__item">
@@ -418,7 +418,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__subscribe">
+          <div class="subscribe">
             <form class="subscribe__form">
               <h4 class="subscribe__title">Підпишіться на розсилку</h4>
 
@@ -485,7 +485,7 @@
           </label>
         </form>
 
-        <div class="agreement__container">
+        <div class="agreement">
           <label class="agreement__label">
             <input
               class="checkbox"

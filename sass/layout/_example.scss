@@ -1,8 +1,7 @@
 .example {
-    padding-top: 0;
-  }
-  
-  .example__title {
+  padding-top: 0;
+
+  &__title {
     color: $title-text-color;
     font-weight: 700;
     font-size: 36px;
@@ -10,21 +9,21 @@
     text-align: center;
     margin-bottom: 50px;
   }
-  
-  .example__list {
+
+  &__list {
     margin-top: 50px;
     display: flex;
   }
-  
-  .example__list .example__item + .example__item {
-    margin-left: 30px;
-  }
-  
-  .example__item {
+
+  &__item {
     position: relative;
   }
-  
-  .example__description {
+
+  &__list &__item + &__item {
+    margin-left: 30px;
+  }
+
+  &__description {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -39,4 +38,15 @@
     white-space: nowrap;
     color: $primary-white-color;
   }
+}
+  
+
+  
+ 
+  
+  
+  
+  
+  
+  
   
