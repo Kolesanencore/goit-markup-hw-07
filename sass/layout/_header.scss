@@ -66,9 +66,10 @@
 
 .contacts-nav {
   display: flex;
+  align-items: center;
   margin-left: auto;
 
-  &__item &__link{
+  &__item {
     display: flex;
     align-items: center;
     
